@@ -51,7 +51,7 @@ function createHeart() {
             heart.remove();
             clearInterval(heartFall);
 
-            if (score >= 10 && !gameWon) {
+            if (score >= 30 && !gameWon) {
                 winGame();
             }
         }
@@ -121,3 +121,4 @@ yesBtn.addEventListener("click", function() {
         <p>I can't wait to keep building our world together.</p>
     `;
 });
+
