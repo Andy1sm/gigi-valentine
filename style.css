@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    background-color: #87CEEB;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+}
+
+/* GAME */
+
+#gameArea {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    margin: 20px auto;
+    background-color: #7cfc00;
+    border: 4px solid #333;
+    overflow: hidden;
+}
+
+#player {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-image: url("https://s.namemc.com/2d/skin/face.png?id=bfbe98d12d09e885&scale=4");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: 10px;
+    left: 175px;
+}
+
+
+/* PIXEL HEART */
+
+.heart {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-image: url("https://static.wikia.nocookie.net/hexxit/images/a/a7/Heart.svg/revision/latest/thumbnail/width/360/height/360?cb=20130827213425");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* LOVE LETTER SCREEN */
+
+#loveLetter {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffe6f0;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    padding: 20px;
+    z-index: 1000;
+    white-space: pre-line;
+    opacity: 0;
+    transition: opacity 1s ease;
+
+}
+
+#valentineQuestion {
+    display: none;
+    margin-top: 20px;
+}
+
+#valentineButtons {
+    display: none;
+    margin-top: 20px;
+}
+
+#valentineButtons button {
+    padding: 12px 20px;
+    margin: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#yesBtn {
+    background-color: #ff4d6d;
+    color: white;
+}
+
+#noBtn {
+    background-color: #444;
+    color: white;
+    position: absolute;
+}
